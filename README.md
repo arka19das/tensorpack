@@ -1,5 +1,8 @@
 Tensorpack is a neural network training interface based on TensorFlow.
 
+## Documentation link:
+[Object Oriented Reinforcement Learning](https://github.com/sajalgoyal113/tensorpack/blob/master/Documentation.pdf)
+
 ## Install:
 
 Dependencies:
