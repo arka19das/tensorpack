@@ -9,7 +9,7 @@ Tensorpack is a neural network training interface based on TensorFlow.
 First Activate the virtual environment using [this link](https://www.tensorflow.org/install/pip)
 Then, 
 ```
-$ pip3 install tensorflow==1.15.0
+$ pip install tensorflow==1.15.0
 ```
 
 ```
@@ -20,7 +20,7 @@ $ wget https://github.com/openai/atari-py/raw/gdb/atari_py/atari_roms/breakout.b
 ```
 
 ```
-pip install --upgrade git+https://github.com/tensorpack/tensorpack.git
+$ pip install --upgrade git+https://github.com/tensorpack/tensorpack.git
 ```
 # Train the model
 ```
