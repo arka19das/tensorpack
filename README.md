@@ -22,11 +22,11 @@ $ wget https://github.com/openai/atari-py/raw/gdb/atari_py/atari_roms/breakout.b
 ```
 $ pip install --upgrade git+https://github.com/tensorpack/tensorpack.git
 ```
-# Train the model
+### Train the model
 ```
 $ ./DQN.py --env breakout.bin --algo DQN
 ```
-# Play the trained model ( here model-2000000 is pretrained model for 80 epochs)
+### Play the trained model ( here model-2000000 is pretrained model for 80 epochs)
 ```
 $ ./DQN.py --env breakout.bin --task play --load ./train_log/DQN-breakout/model-2000000
 ```
