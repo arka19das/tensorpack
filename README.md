@@ -5,6 +5,9 @@ Tensorpack is a neural network training interface based on TensorFlow.
 
 [Presentation](https://drive.google.com/open?id=11Bfo5fHkLcv6_BwWmd1Qr9Oz8u6O0ItCpde-2YCHqkk)
 
+### Colab link 
+[here](https://github.com/sajalgoyal113/tensorpack/blob/master/Atari.ipynb)
+
 ## How to do a local setup on UBUNTU:
 First Activate the virtual environment using [this link](https://www.tensorflow.org/install/pip)
 Then, 
