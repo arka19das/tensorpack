@@ -26,9 +26,9 @@ wget http://models.tensorpack.com/DeepQNetwork/DoubleDQN-breakout.bin.npz
 ./DQN.py --env breakout.bin --task play --load DoubleDQN-breakout.bin.npz
 ```
 
-Evaluation of 50 episodes:
+Evaluation :
 ```
-./DQN.py --env breakout.bin --task eval --load DoubleDQN-breakout.bin.npz
+./DQN.py --env breakout.bin --task eval --load ./train_log/DQN-breakout/model-2000000
 ```
 
 ### With gym's Atari:
