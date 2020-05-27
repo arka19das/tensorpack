@@ -15,7 +15,7 @@ from gym.envs.atari.atari_env import ACTION_MEANING
 from tensorpack.utils import logger, execute_only_once, get_rng
 from tensorpack.utils.fs import get_dataset_path
 
-from google.colab.patches import cv2_imshow
+#from google.colab.patches import cv2_imshow
 import matplotlib.pyplot as plt
 # from IPython import display as ipythondisplay
 # from IPython.display import clear_output
@@ -124,17 +124,17 @@ class AtariPlayer(gym.Env):
         if self.viz:
             if isinstance(self.viz, float):
                 #cv2.imshow(self.windowname, ret)
-                plt.ion() 
-                cv2_imshow(ret)
+                #plt.ion() 
+                #cv2_imshow(ret)
                 #cv2.waitKey(int(self.viz * 1000))
 
                 #ret.view(dtype=np.int8).reshape(640, 480)
                 plt.figure()
                 plt.imshow(ret)
-                plt.pause(0.0001)
+                #plt.pause(0.0001)
                 #print(ret.shape)
                 # plt.draw()
-                #plt.show()
+                plt.show()
                 
         ret = ret.astype('float32')
         # 0.299,0.587.0.114. same as rgb2y in torch/image
