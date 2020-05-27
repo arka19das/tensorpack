@@ -117,7 +117,7 @@ class AtariPlayer(gym.Env):
         if self.viz:
             if isinstance(self.viz, float):
                 #cv2.imshow(self.windowname, ret)
-                cv2_imshow(self.windowname, ret)
+                cv2_imshow(ret)
                 cv2.waitKey(int(self.viz * 1000))
         ret = ret.astype('float32')
         # 0.299,0.587.0.114. same as rgb2y in torch/image
