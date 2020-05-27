@@ -41,7 +41,7 @@ def play_one_episode(env, func, render=False):
         act = predict(ob)
         ob, r, isOver, info = env.step(act)
         if render:
-            screen = env.render('rgb_array')
+            screen = env.render()
             if screen is None:
                 print("Empty object")
             plt.figure()
