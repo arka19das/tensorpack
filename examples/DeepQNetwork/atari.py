@@ -118,6 +118,7 @@ class AtariPlayer(gym.Env):
             if isinstance(self.viz, float):
                 #cv2.imshow(self.windowname, ret)
                 cv2_imshow(ret)
+                Image.show(title=None, command=None)
                 #cv2.waitKey(int(self.viz * 1000))
 #                 plt.imshow(ret)
 #                 plt.show()
