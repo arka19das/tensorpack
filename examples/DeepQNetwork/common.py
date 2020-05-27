@@ -42,6 +42,8 @@ def play_one_episode(env, func, render=False):
         ob, r, isOver, info = env.step(act)
         if render:
             screen = env.render('rgb_array')
+            if screen is None:
+                print("Empty object")
             plt.figure()
             plt.imshow(np.asarray(screen))
             plt.title('Non-processed screen example')
