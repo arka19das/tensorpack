@@ -20,6 +20,8 @@ from pyvirtualdisplay import Display
 
 from PIL import Image
 
+display = Display(visible=0, size=(400, 300))
+display.start()
 
 def play_one_episode(env, func, render=False):
     def predict(s):
