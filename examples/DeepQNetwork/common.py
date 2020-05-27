@@ -20,8 +20,8 @@ from pyvirtualdisplay import Display
 
 from PIL import Image
 
-display = Display(visible=0, size=(400, 300))
-display.start()
+# display = Display(visible=0, size=(400, 300))
+# display.start()
 
 #%matplotlib inline
 
@@ -44,13 +44,13 @@ def play_one_episode(env, func, render=False):
         ob, r, isOver, info = env.step(act)
         if render:
             screen = env.render()
-            if screen is None:
-                print("Empty object")
-            else:
-                plt.figure()
-                plt.imshow(np.asarray(screen))
-                plt.title('Non-processed screen example')
-                plt.show()
+#             if screen is None:
+#                 print("Empty object")
+#             else:
+#                 plt.figure()
+#                 plt.imshow(np.asarray(screen))
+#                 plt.title('Non-processed screen example')
+#                 plt.show()
         sum_r += r
         if isOver:
             return sum_r
