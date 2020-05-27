@@ -13,6 +13,8 @@ from tensorpack.utils import logger, get_tqdm
 from tensorpack.utils.concurrency import ShareSessionThread, StoppableThread
 from tensorpack.utils.stats import StatCounter
 
+import matplotlib as plt
+
 
 def play_one_episode(env, func, render=False):
     def predict(s):
@@ -32,7 +34,11 @@ def play_one_episode(env, func, render=False):
         act = predict(ob)
         ob, r, isOver, info = env.step(act)
         if render:
-            env.render()
+            screen = env.render('rgb_array')
+            plt.figure()
+            plt.imshow(screen)
+            plt.title('Non-processed screen example')
+            plt.show()
         sum_r += r
         if isOver:
             return sum_r
