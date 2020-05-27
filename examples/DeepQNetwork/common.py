@@ -46,10 +46,11 @@ def play_one_episode(env, func, render=False):
             screen = env.render()
             if screen is None:
                 print("Empty object")
-            plt.figure()
-            plt.imshow(np.asarray(screen))
-            plt.title('Non-processed screen example')
-            plt.show()
+            else:
+                plt.figure()
+                plt.imshow(np.asarray(screen))
+                plt.title('Non-processed screen example')
+                plt.show()
         sum_r += r
         if isOver:
             return sum_r
