@@ -14,6 +14,11 @@ from tensorpack.utils.concurrency import ShareSessionThread, StoppableThread
 from tensorpack.utils.stats import StatCounter
 
 import matplotlib.pyplot as plt
+from IPython import display as ipythondisplay
+from IPython.display import clear_output
+from pyvirtualdisplay import Display
+
+from PIL import Image
 
 
 def play_one_episode(env, func, render=False):
