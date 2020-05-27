@@ -23,6 +23,8 @@ from PIL import Image
 display = Display(visible=0, size=(400, 300))
 display.start()
 
+%matplotlib inline
+
 def play_one_episode(env, func, render=False):
     def predict(s):
         """
