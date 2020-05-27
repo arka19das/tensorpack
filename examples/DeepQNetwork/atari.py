@@ -17,9 +17,9 @@ from tensorpack.utils.fs import get_dataset_path
 
 from google.colab.patches import cv2_imshow
 import matplotlib.pyplot as plt
-from IPython import display as ipythondisplay
-from IPython.display import clear_output
-from pyvirtualdisplay import Display
+# from IPython import display as ipythondisplay
+# from IPython.display import clear_output
+# from pyvirtualdisplay import Display
 from matplotlib.pyplot import imshow
 
 from PIL import Image
