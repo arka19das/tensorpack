@@ -129,7 +129,7 @@ class AtariPlayer(gym.Env):
                  print(type(ret))
                  plt.figure()
                  plt.imshow(ret)
-                 plt.show()
+                 plt.draw()
         ret = ret.astype('float32')
         # 0.299,0.587.0.114. same as rgb2y in torch/image
         ret = cv2.cvtColor(ret, cv2.COLOR_RGB2GRAY)[:, :]
