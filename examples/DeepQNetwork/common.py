@@ -13,7 +13,7 @@ from tensorpack.utils import logger, get_tqdm
 from tensorpack.utils.concurrency import ShareSessionThread, StoppableThread
 from tensorpack.utils.stats import StatCounter
 
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 
 def play_one_episode(env, func, render=False):
