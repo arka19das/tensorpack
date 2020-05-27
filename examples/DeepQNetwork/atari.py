@@ -15,6 +15,8 @@ from gym.envs.atari.atari_env import ACTION_MEANING
 from tensorpack.utils import logger, execute_only_once, get_rng
 from tensorpack.utils.fs import get_dataset_path
 
+from google.colab.patches import cv2_imshow
+
 __all__ = ['AtariPlayer']
 
 ROM_URL = "https://github.com/openai/atari-py/tree/gdb/atari_py/atari_roms"
@@ -114,7 +116,8 @@ class AtariPlayer(gym.Env):
         ret = np.maximum(ret, self.last_raw_screen)
         if self.viz:
             if isinstance(self.viz, float):
-                cv2.imshow(self.windowname, ret)
+                #cv2.imshow(self.windowname, ret)
+                cv2_imshow(self.windowname, ret)
                 cv2.waitKey(int(self.viz * 1000))
         ret = ret.astype('float32')
         # 0.299,0.587.0.114. same as rgb2y in torch/image
