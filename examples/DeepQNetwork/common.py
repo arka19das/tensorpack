@@ -43,7 +43,7 @@ def play_one_episode(env, func, render=False):
         if render:
             screen = env.render('rgb_array')
             plt.figure()
-            plt.imshow(np.real(screen))
+            plt.imshow(np.asarray(screen))
             plt.title('Non-processed screen example')
             plt.show()
         sum_r += r
