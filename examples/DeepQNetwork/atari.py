@@ -20,6 +20,7 @@ import matplotlib.pyplot as plt
 from IPython import display as ipythondisplay
 from IPython.display import clear_output
 from pyvirtualdisplay import Display
+from matplotlib.pyplot import imshow
 
 from PIL import Image
 
@@ -123,13 +124,18 @@ class AtariPlayer(gym.Env):
         if self.viz:
             if isinstance(self.viz, float):
                 #cv2.imshow(self.windowname, ret)
-                #cv2_imshow(ret)
-                #Image.show(title=None, command=None)
+                plt.ion() 
+                cv2_imshow(ret)
                 #cv2.waitKey(int(self.viz * 1000))
-                 print(type(ret))
-                 plt.figure()
-                 plt.imshow(ret)
-                 plt.draw()
+
+                #ret.view(dtype=np.int8).reshape(640, 480)
+                plt.figure()
+                plt.imshow(ret)
+                plt.pause(0.0001)
+                #print(ret.shape)
+                # plt.draw()
+                #plt.show()
+                
         ret = ret.astype('float32')
         # 0.299,0.587.0.114. same as rgb2y in torch/image
         ret = cv2.cvtColor(ret, cv2.COLOR_RGB2GRAY)[:, :]
