@@ -1,9 +1,11 @@
 Tensorpack is a neural network training interface based on TensorFlow.
 
 ## Documentation link:
-[Object Oriented Reinforcement Learning DOCUMENTATION](https://github.com/sajalgoyal113/tensorpack/blob/master/Documentation.pdf)
+[Reinforcement Learning DOCUMENTATION](https://github.com/sajalgoyal113/tensorpack/blob/master/Documentation.pdf)
 
-[Presentation](https://drive.google.com/open?id=11Bfo5fHkLcv6_BwWmd1Qr9Oz8u6O0ItCpde-2YCHqkk)
+[Presentation](https://prezi.com/view/2UVrYjPQzgG8ExOV2F6R/)
+
+[Codes involved](https://drive.google.com/open?id=11Bfo5fHkLcv6_BwWmd1Qr9Oz8u6O0ItCpde-2YCHqkk)
 
 ### Colab link 
 [here](https://github.com/sajalgoyal113/tensorpack/blob/master/Atari.ipynb)
